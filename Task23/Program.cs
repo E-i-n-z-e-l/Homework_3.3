@@ -1,20 +1,29 @@
-﻿int Cubing(int c_u_b_e)
+﻿void Cubing(int c_u_b_e)
 {
-    int count = 0;
+    int count = 1;
     while (count <= c_u_b_e)
     {
-        Console.WriteLine(c_u_b_e + " | " + Math.Pow(c_u_b_e, 3));
+        Console.WriteLine($"{count} "+Math.Pow(count, 3));
         count++;
     }
-    return c_u_b_e;
+    
 }
 
 Console.WriteLine("Введите число ");
 int cube = Convert.ToInt32(Console.ReadLine());
 
-int cuber = Cubing(cube);
+if (cube > 0)
+{
+    Cubing(cube);
+}
+else 
+{
+    Console.WriteLine($"Число {cube} не натуральное");
+}
 
-Console.WriteLine(cuber);
+
+
+
 
 
 
