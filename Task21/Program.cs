@@ -20,5 +20,6 @@ Console.WriteLine("Введите координату Z2 ");
 int coordinateZ2 = Convert.ToInt32(Console.ReadLine());
 
 double spacing = distance3D3D3D(coordinateX1, coordinateY1, coordinateZ1, coordinateX2, coordinateY2, coordinateZ2);
+double spacingour = Math.Round(spacing, 2, MidpointRounding.ToZero);
 
-Console.WriteLine(spacing);
+Console.WriteLine(spacingour);
